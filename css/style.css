@@ -13,7 +13,7 @@ html {
 }
 
 .max-container {
-    display: relative;
+    position: relative;
     min-width: 600px;
     background-color: tomato;
     height: 915px;
@@ -30,7 +30,19 @@ header {
 main {
     background-color: chartreuse;
     width: calc(100% - 3rem);
-    
+    margin-left: 3rem;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.banner {
+    background-color: aquamarine;
+    position: fixed;
+    top: 0;
+    left: 3rem;
+    right: 0;
+    height: 9vh;
+    z-index: 3;
 }
 
 footer {
