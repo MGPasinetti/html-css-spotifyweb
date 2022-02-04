@@ -3,3 +3,45 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 16px;
+    color: grey;
+}
+
+.max-container {
+    display: relative;
+    min-width: 600px;
+    background-color: tomato;
+    height: 915px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: cadetblue;
+    height: calc(100% - 9vh);
+    width: 3rem;
+}
+
+main {
+    background-color: chartreuse;
+    width: calc(100% - 3rem);
+    
+}
+
+footer {
+    display: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: blueviolet;
+    width: 100%;
+    height: 9vh;
+}
+
+/* UTILITY CLASSES */
+
