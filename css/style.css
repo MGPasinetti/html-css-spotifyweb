@@ -25,6 +25,7 @@ html {
 header {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     background-color: black;
     height: calc(100% - 9vh);
@@ -32,9 +33,10 @@ header {
 }
 
 header .row {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     width: 60%;
-    margin: 0 auto;
 }
 
 header .row.up {
@@ -43,6 +45,19 @@ header .row.up {
 
 header .row.down {
     margin-bottom: .5rem;
+}
+
+/* header .row a {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .row img {
+    width: 100%;
+} */
+
+header .row a[href$="!"] img{
+    width: 80%;
 }
 
 /* MAIN */
