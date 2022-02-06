@@ -24,6 +24,10 @@ a {
     color: white;
 }
 
+ul {
+    list-style: none;
+}
+
 /* UTILITY CLASSES */
 
 /* HEADER */
@@ -84,6 +88,8 @@ main {
     right: 0;
     height: calc(100% - 9vh);
     overflow-y: scroll;
+    font-size: 11px;
+    font-weight: 600;
 }
 
 .banner {
@@ -95,8 +101,6 @@ main {
     right: 0;
     height: 5rem;
     z-index: 3;
-    font-size: 11px;
-    font-weight: 600;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -104,11 +108,32 @@ main {
 
 .banner a {
     background-color: transparent;
-    color: white;
     padding: .5rem 2rem;
     border: 1px solid white;
     border-radius: 4em;
     margin-right: 1rem;
+    text-transform: uppercase;
+}
+
+.main-navbar {
+    margin: 6rem 0 0;
+    text-transform: uppercase;
+}
+
+.main-navbar ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-navbar li {
+    margin-bottom: 2rem;
+    padding: 0 1.5rem;
+}
+
+.main-navbar li a {
+    color: grey;
+    width: calc((100% - 2rem) / 4);
 }
 
 /* FOOTER */
