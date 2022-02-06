@@ -133,7 +133,14 @@ main {
 
 .main-navbar li a {
     color: grey;
-    width: calc((100% - 2rem) / 4);
+    padding: .2rem 0;
+}
+
+.main-navbar hr {
+    width: calc(100% / 3);
+    height: 2px;
+    color: #95ec23;
+    margin: 0 auto;
 }
 
 /* FOOTER */
