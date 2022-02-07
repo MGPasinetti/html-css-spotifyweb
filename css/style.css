@@ -106,6 +106,10 @@ header .row.down a:last-child img {
     border-radius: 100%;
 }
 
+.big-header {
+    display: none;
+}
+
 header a:hover {
     /* aggiungi hover */
 }
@@ -335,6 +339,14 @@ footer h3 {
     
     :root {
         --width-header: 13rem;
+    }
+
+    .small-header {
+        display: none;
+    }
+
+    .big-header {
+        display: block;
     }
 
     .col.center .svgs {
