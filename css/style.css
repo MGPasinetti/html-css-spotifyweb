@@ -72,7 +72,7 @@ header {
     justify-content: space-between;
 }
 
-/* header .row {
+header .row {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -104,7 +104,7 @@ header .row.down a:last-child img {
     width: 1.4rem;
     height: 1.4rem;
     border-radius: 100%;
-} */
+}
 
 header a:hover {
     /* aggiungi hover */
@@ -112,24 +112,22 @@ header a:hover {
 
 @media screen and (min-width: 600px) and (max-width: 800px) {
     
-    header {
-        --width-header: 10rem;
+    :root {
+        --width-header: 13rem;
     }
 }
 
 /* MAIN */
-/* main {
-    background-color: #141922;
-    width: calc(100% - var(--width-header));
-    margin-left: var(--width-header);
+main {
     position: absolute;
     top: 0;
     right: 0;
+    background-color: #141922;
+    width: calc(100% - var(--width-header));
     height: calc(100% - var(--height-footer));
     overflow-y: scroll;
     font-size: 11px;
-    font-weight: 600; */
-
+    font-weight: 600;
 }
 
 /* banner */
@@ -138,7 +136,7 @@ header a:hover {
     opacity: .8;
     position: fixed;
     top: 0;
-    left: 3rem;
+    left: var(--width-header);
     right: 0;
     height: var(--height-banner);
     display: flex;
@@ -230,13 +228,12 @@ header a:hover {
 
 /* FOOTER */
 footer {
-    /* position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
-    right: 0; */
+    right: 0;
     background-color: #282828;
     height: var(--height-footer);
-    position: relative;
     z-index: 2;
     display: flex;
     justify-content: space-between;
