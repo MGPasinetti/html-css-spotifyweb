@@ -269,23 +269,23 @@ footer h3 {
 } 
 
 .col.center {
+    flex: 0 1 35%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
-/* .col.center > div {
-    width: 100%;
-    display: block;
-} */
-
 .col.center .svgs {
-    display: block;
-    font-size: 17px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    line-height: 28px;
+    vertical-align: middle;
 }
 
 .fa-play-circle {
-    font-size: 25px;
+    font-size: 28px;
 }
 
 
