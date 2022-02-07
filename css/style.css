@@ -322,11 +322,11 @@ footer h3 {
     top: 0;
     height: 100%;
     width: 20%;
-    background-color: #d6d5d5;
+    background-color: #c0bfbf;
     border-radius: .2em;
 }
 
-.col.LH .player-line {
+.col.RH .player-line {
     flex: 0 1 70%;
 }
 
@@ -341,17 +341,16 @@ footer h3 {
         width: 90%;
     }
 
-    footer .col.RH img {
-        width: 70%;
-    }
-
-    footer h2 {
-        font-size: 12px;
-        margin: 0;
+    footer .col.LH img {
+        width: 2.5rem;
     }
     
     footer h3 {
-        font-size: 10px;
+        width: 4.5rem;
+    }
+
+    .col.RH {
+        column-gap: .8rem;
     }
 }
 
