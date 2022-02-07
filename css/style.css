@@ -288,6 +288,20 @@ footer h3 {
     font-size: 28px;
 }
 
+.player > span {
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+
+}
+
+.player-line {
+    display: inline-block;
+    width: 10rem;
+    height: 3px;
+    background-color: grey;
+}
+
 
 
 
