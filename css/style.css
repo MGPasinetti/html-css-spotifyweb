@@ -182,8 +182,13 @@ header a:hover {
 } */
 
 .big-header .row.down a:first-child img {
+    margin-right: .5rem;
     width: 1rem;
     filter: brightness(.8);
+}
+
+.big-header .row.down a:first-child {
+    font-size: 11px;
 }
 
 .big-header hr {
@@ -192,11 +197,18 @@ header a:hover {
 }
 
 .big-header .row.down a:last-child img {
-    background-color: grey;
+    margin-right: .5rem;
     width: 1.4rem;
     height: 1.4rem;
+    background-color: grey;
     border-radius: 100%;
 }
+
+.big-header .row.down a:last-child {
+    font-weight: 700;
+    color: white;
+}
+
 
 /* MAIN */
 main {
