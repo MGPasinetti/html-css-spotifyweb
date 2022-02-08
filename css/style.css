@@ -58,97 +58,161 @@ h3 {
 
 /* HEADER */
 header {
+    width: var(--width-header);
+    height: calc(100% - var(--height-footer));
     position: absolute;
     top: 0;
     left: 0;
-    height: calc(100% - var(--height-footer));
-    width: var(--width-header);
     z-index: 0;
     overflow-y: hidden;
     background-color: black;
+}
+
+.small-header {
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
-header .row {
+.small-header .row {
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-content: center;
-    width: 60%;
 }
 
-header .row a {
+.small-header .row a {
+    margin: .5rem 0;
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: .5rem 0;
 }
 
-header .row a[href$="!"] img{
+.small-header .row a[href$="!"] img{
     width: 80%;
 }
 
-header .row.up a[href$="!"] img {
+.small-header .row.up a[href$="!"] img {
     filter: brightness(.8);
 }
 
-header .row.down a:first-child img {
+.small-header .row.down a:first-child img {
     width: 1rem;
     filter: brightness(.8);
 }
 
-header .row.down a:last-child img {
+.small-header .row.down a:last-child img {
     background-color: grey;
     width: 1.4rem;
     height: 1.4rem;
     border-radius: 100%;
 }
 
-.big-header {
-    display: none;
-}
-
 header a:hover {
     /* aggiungi hover */
 }
 
+/* big-header */
+.big-header {
+    display: none;
+}
 
+.big-header .row {
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+}
+
+.big-header a {
+    padding: 0 1rem;
+    color: grey;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.big-header .logo img {
+    width: 8rem;
+    margin-bottom: 1rem;
+}
+
+.big-header ul {
+    margin-bottom: .5rem;
+}
+
+.big-header li {
+    margin-bottom: .5rem;
+}
+
+.big-header ul a {
+    display: flex;
+    align-items: center;
+}
+
+.big-header ul img {
+    margin-right: .5rem;
+    height: 1.5rem;
+    display: inline-block;
+}
+
+.big-header .row.up a[href$="!"] img {
+    filter: brightness(.8);
+}
+
+.big-header h1 {
+    padding: 0 1rem;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.big-header .fa-plus-square {
+    font-size: 40px;
+    border-radius: 0;
+    color: rgb(172, 170, 170);
+    margin-right: .5rem;
+}
+
+.playlists li:nth-child(2) a {
+    font-size: 13px;
+}
 
 /* MAIN */
 main {
+    width: calc(100% - var(--width-header));
+    height: calc(100% - var(--height-footer));
+    font-size: 11px;
+    font-weight: 600;
     position: absolute;
     top: 0;
     right: 0;
     background-color: #141922;
-    width: calc(100% - var(--width-header));
-    height: calc(100% - var(--height-footer));
     overflow-y: scroll;
-    font-size: 11px;
-    font-weight: 600;
 }
 
 /* banner */
 .banner {
+    height: var(--height-banner);
     background-color: #080B12;
     opacity: .8;
     position: fixed;
     top: 0;
     left: var(--width-header);
     right: 0;
-    height: var(--height-banner);
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
 .banner a {
-    background-color: transparent;
+    margin-right: 1rem;
     padding: .5rem 2rem;
+    background-color: transparent;
     border: 1px solid white;
     border-radius: 4em;
-    margin-right: 1rem;
     text-transform: uppercase;
     position: relative;
     z-index: 3;
@@ -172,15 +236,15 @@ main {
 }
 
 .main-navbar li a {
-    color: grey;
     padding: .2rem 0;
+    color: grey;
 }
 
 .main-navbar hr {
+    margin: 0 auto;
     width: calc(100% / 3);
     height: 2px;
     color: #95ec23;
-    margin: 0 auto;
 }
 
 /* music-section */
@@ -217,8 +281,8 @@ main {
 }
 
 .spec_h3 {
-    flex: 2 1 100%;
     margin-bottom: 1rem;
+    flex: 2 1 100%;
 }
 
 .artists-sec img {
@@ -326,7 +390,7 @@ footer h3 {
     top: 0;
     height: 100%;
     width: 20%;
-    background-color: #c0bfbf;
+    background-color: #d6d5d5;
     border-radius: .2em;
 }
 
@@ -346,7 +410,9 @@ footer h3 {
     }
 
     .big-header {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .col.center .svgs {
