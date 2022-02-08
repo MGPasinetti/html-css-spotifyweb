@@ -321,7 +321,7 @@ main {
 
 /* FOOTER */
 footer {
-    padding: 0 .5rem;
+    padding: 0 .7rem;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -336,7 +336,6 @@ footer {
 }
 
 footer .col {
-    /* background-color: #95ec23; */
     height: 80%;
     display: flex;
     align-items: center;
@@ -391,17 +390,13 @@ footer .col.LH, .col.RH {
 
 /* col.CENTER */
 .col.center {
-    margin-left: 2rem;
+    margin-left: 1rem;
     flex: 2 0 40%;
     max-width: 26rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     row-gap: .3rem;
-}
-
-.col.center > * {
-    /* background-color: aqua; */
 }
 
 .col.center .svgs {
@@ -437,7 +432,6 @@ footer .col.LH, .col.RH {
 
 .player > span:first-of-type {
     justify-content: flex-end;
-
 }
 
 .player-line {
@@ -458,9 +452,24 @@ footer .col.LH, .col.RH {
     border-radius: .2em;
 }
 
-/* .col.RH .player-line {
-    flex: 0 1 70%;
-} */
+/* col.RH */
+.col.RH {
+    display: flex;
+    justify-content: space-between;
+    column-gap: .7rem;
+}
+
+.col.RH .svgs {
+    flex: 0 1 50%;
+    min-width: 50.35px;
+    max-width: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col.RH .player-line {
+    flex: 1 1 50%;
+}
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 600px) and (max-width: 800px) {
